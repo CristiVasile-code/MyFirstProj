@@ -10,7 +10,7 @@ public class Main {
 
         System.out.println(myByteVariable);
 
-        myByteVariable += 2; // myByteVariable = myByteVariable + 2;
+        //myByteVariable += 2; // myByteVariable = myByteVariable + 2;
 
         System.out.println(myByteVariable);
 
