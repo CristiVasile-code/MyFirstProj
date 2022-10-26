@@ -13,7 +13,7 @@ public class Main2 {
         System.out.println(op.Snow(6));
         System.out.println(op.threeOrFour(5));
         op.whatNumberIsThis(3);
-        System.out.println(op.isNumberEven(7));
+        System.out.println(op.isNumberEven(27));
         System.out.println(op.isEligibileToVote(19));
         System.out.println(op.bigger(1,5,3));
     }
