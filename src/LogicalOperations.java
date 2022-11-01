@@ -29,7 +29,6 @@ public class LogicalOperations {
 
         return result;
     }
-
     public String Snow(int number){ //pct. 6
         String ret;
         if (number > 8 || number == 6){
@@ -105,5 +104,140 @@ public class LogicalOperations {
         }
         return bigger;
     }
+    public void deLaXLa100(int x){
+        for(int i=x;i <= 100;i++){
+            System.out.println(i);
+        }
+    }
+    public void panaLaminus100(int x){
+        for(int i=x;i>=-100;i--){
+            System.out.println(i);
+        }
+    }
+    public void deLaXlaY(int x, int y){
+        if(x < y){
+            for(int i=x;i<=y;i++){
+                System.out.println(i);
+            }
+        }
+        else if(x > y){
+            for(int i=x; i>=y;i--){
+                System.out.println(i);
+            }
+        }
+        else
+            System.out.println("Numerele sunt egale !");
+    }
+    public void deLaXlaYtoo(int x, int y){
+        if(x > y){
+            for(int i=y;i<=x;i++)
+                System.out.println(i);
+                 }
+        else if(y>x){
+            for(int i=x;i<=y;i++)
+                System.out.println(i);
+                    }
+        else
+            System.out.println("numerele sunt egale");
+    }
+    public void parePanaLa100(){
+        for(int i=2;i<=100;i++)
+            if(i%2 == 0) System.out.println(i);
+    }
+    public void imparePanaLa100(){
+        for(int i=1;i<=100;i++)
+            if(i%2 != 0) System.out.println(i);
+    }
+    public int sumaX100(int x){
+        int suma=0;
+        for(int i = x;i<=100;i++){
+            suma = suma + i;
+        }
+        return suma;
+    }
+    public float mediaFromNTO100(int x){
+        float suma = 0;
+        int j = 0;
+        float media = 0;
+        for(int i=x;i<=100;i++){
+            suma = suma + i;
+            j++;
+        }
+        System.out.println(j);
+        System.out.println(suma);
+        return suma / j;
+    }
+    public void countTo100(int x){
+        while(x<=100){
+            System.out.println(x);
+            x++;
+        }
+    }
+    public void countTominus100(int x){
+        while(x>=-100){
+            System.out.println(x);
+            x--;
+        }
+    }
+    public void countXtoY(int x, int y){
+        while(x<=y){
+            System.out.println(x);
+            x++;
+        }
+        while(x>=y){
+            System.out.println(y);
+            y++;
+        }
+    }
+    public void pareTo100(){
+        int i = 2;
+        while(i <= 100){
+            if(i%2 == 0)
+                System.out.println(i);
+            i++;
+        }
+    }
+    public void impareTo100(){
+        int i = 1;
+        while(i<=100){
+            if(i%2 != 0)
+                System.out.println(i);
+            i++;
+        }
+    }
+    public void sumaDivizibilCu7(int x, int y){
+        int suma = 0;
+        int count = 0;
+        float media = 0;
+        while(x <= y){
+            if(x % 7 == 0){
+                suma = suma + x;
+                count++;
+            }
+            x++;
+        }
+        media = suma / count;
+        System.out.println("suma este: " + suma);
+        System.out.println(count);
+        System.out.println("Media este: " + media);
+    }
+    public void fibo20(){
+        int i = 1;
+        int fibominus1 = 1;
+        int fibominus2 = 0;
+        int fibo = 0;
+        String sirFibo ="";
+        //System.out.println("0");
+        //System.out.println("1");
+        while(i <= 18){
+            fibo = fibominus1 + fibominus2;
+            fibominus2 = fibominus1;
+            fibominus1 = fibo;
+            //System.out.println(fibo);
+            sirFibo = sirFibo + " " + fibo;
+            i++;
+        }
+        System.out.println("0 1" + sirFibo);
+    }
+    }
 
-}
