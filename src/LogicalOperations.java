@@ -167,6 +167,13 @@ public class LogicalOperations {
         System.out.println(suma);
         return suma / j;
     }
+    public void stars(){
+        for(int i=7;i>=1;i--){
+            for(int j=1;j<=i;j++){
+                System.out.print("* ");}
+            System.out.println();
+        }
+    }
     public void countTo100(int x){
         while(x<=100){
             System.out.println(x);
@@ -239,5 +246,39 @@ public class LogicalOperations {
         }
         System.out.println("0 1" + sirFibo);
     }
+    public void CozaLozaWoza(){
+        int i = 1;
+        // for(int i = 1;i <= 110;i++){
+        while(i<=110){
+            if(i % 3 == 0 && i % 5 == 0 && i % 7 == 0){
+                System.out.print("CozaLozaWoza  ");
+            }   //
+            else if(i % 3 == 0 && i % 5 == 0){
+                System.out.print("CozaLoza  ");
+            }
+            else if(i % 3 == 0 && i % 7 == 0){
+                System.out.print("CozaWoza  ");
+            }
+            else if(i % 5 == 0 && i % 7 == 0){
+                System.out.print("WozaLoza  ");
+            }
+            else if(i % 3 == 0){
+                System.out.print("Coza  ");
+            }
+            else if(i % 5 == 0){
+                System.out.print("Loza  ");
+            }
+            else if(i % 7 == 0){
+                System.out.print("Woza  ");
+            }
+            else{
+                System.out.print(i + "  ");
+            }
+            if(i%11 == 0){
+                System.out.println();}
+            i++;
+        }
     }
+
+}
 

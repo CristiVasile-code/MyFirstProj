@@ -32,6 +32,7 @@ public class Main2 {
         System.out.println(op.sumaX100(60));
         //for loops pct8:
         System.out.println("Media numerelor este: " + op.mediaFromNTO100(23));*/
+        //op.stars();
         //op.countTo100(80);
         //op.countTominus100(20);
         //op.countXtoY(44,20);
@@ -39,7 +40,7 @@ public class Main2 {
         //op.impareTo100();
         //op.sumaDivizibilCu7(3,200);
         //op.fibo20();
-
+        //op.CozaLozaWoza();
     }
 
 }
