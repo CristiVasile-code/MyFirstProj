@@ -39,7 +39,7 @@ public class Main2 {
         //op.pareTo100();
         //op.impareTo100();
         //op.sumaDivizibilCu7(3,200);
-        //op.fibo20();
+        op.fibo20();
         //op.CozaLozaWoza();
     }
 
