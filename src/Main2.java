@@ -41,6 +41,40 @@ public class Main2 {
         //op.sumaDivizibilCu7(3,200);
         //op.fibo20();
         //op.CozaLozaWoza();
+        //op.array100();
+        // pct 3 :
+        /*int [] array = new int[100];
+        for(int n:op.arrayPare100(array))
+            if(n != 0)
+                System.out.print(n + " ");*/
+        //pct 4
+        /* int[] arrayNumere = {1,3,2,4,5,7};
+        float media = op.mediaDinArray(arrayNumere);
+        System.out.println(media); */
+        //pct 5.
+        /*String[] sir = {"alb","galben","verde","rosu","albastru","magenta"};
+        String val = "magenta";
+        System.out.println(op.esteSauNu(sir, val));*/
+        //pct 6.
+        /* int[] array = {1,3,5,7,9,10};
+        int valoare = 7;
+        int rezultat = op.cePozitie(array, valoare);
+        if(rezultat != -1)
+            System.out.println("Pozitia in array a numarului cautat este: " + rezultat);
+        else
+            System.out.println("Numarul " + valoare + " nu se afla in array."); */
+        //pct. 9
+        /* int[] array = {10,2,31,14,5,6,7,18,9};
+        System.out.println(op.sort2nd(array));
+        // altfel, folosind doar bucla for
+         int[] array = {10,2,31,14,5,6,7,18,9};
+        System.out.println(op.sort2ndDoi(array));*/
+        //pct. 10
+        /* int[] array1 = {1,2,3,4,5,6};
+        int[]array2 = new int[6];
+        for(int x:op.copy1To2(array1, array2))
+            System.out.print(x + " "); */
+
     }
 
 }

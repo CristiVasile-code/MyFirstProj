@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class LogicalOperations {
     public int checkBiggerNumber(int first, int second){ //pct. 3
         if(first > second){
@@ -279,6 +280,76 @@ public class LogicalOperations {
             i++;
         }
     }
+    public void array100(){
+        int arr[] = new int[100];
+        for(int i=0;i<arr.length;i++){
+            arr[i]=i+1;
+        }
+        for(int x:arr){
+            System.out.print(x + " ");
+        }
+    }
+    public int[] arrayPare100(int[] arr){
+        int index = 0;
+        for(int i=1;i<=100;i++){
+            if(i % 2 == 0){
+                arr[index] = i;
+                index++;
+            }
+        }
+        return arr;
+    }
+    public  boolean esteSauNu(String[] sir, String val){
+        boolean comp = true;
+        for(String s:sir){
+            if(s.equals(val)){
+                comp = true;
+                break;}
+            else
+                comp = false;
+        }
+        return comp;
+    }
+    public int cePozitie(int[] arr, int val){
+        int index = 0, retur = -1;
+        for(int p:arr){
+            if(p == val){
+                retur = index;}
+            index++;
+        }
+        return retur;
+    }
+    public int sort2nd(int[] arr){
+        Arrays.sort(arr);
+        return arr[1];
 
+    }
+    public int sort2ndDoi(int[] arr){
+        int temp = 0;
+        for (int i = 0; i <arr.length; i++) {
+            for (int j = i+1; j <arr.length; j++) {
+                if(arr[i] >arr[j]) {
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        return arr[1];
+    }
+    public  int[] copy1To2(int[]arr1, int[] arr2){
+        for(int i=0;i<arr1.length;i++)
+            arr2[i] = arr1[i];
+        return arr2;
+    }
+    public float mediaDinArray(int[]arr){
+        int count = 0;
+        float suma = 0;
+        for(int i=0;i<arr.length;i++){
+            suma += arr[i];
+            count++;
+        }
+        return suma/count;
+    }
 }
 
