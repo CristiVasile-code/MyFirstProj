@@ -351,5 +351,57 @@ public class LogicalOperations {
         }
         return suma/count;
     }
+    public int[] arrayFaraNumar(int[]arr, int numar){
+        int[]arrTemp = new int[arr.length-1];
+        for(int i=0, k=0;i<arr.length;i++){
+            if(arr[i] != numar){
+                arrTemp[k] = arr[i];
+                k++;
+            }
+
+        }
+        return arrTemp;
+    }
+    public int[] sortArray(int[] arr){
+        int temp = 0;
+        for (int i = 0; i <arr.length; i++) {
+            for (int j = i+1; j <arr.length; j++) {
+                if(arr[i] >arr[j]) {
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        return arr;
+    }
+    public void primulUltimul(int[] arr){
+        int[] sorted = sortArray(arr);
+        System.out.print(sorted[0] + " " + sorted[sorted.length-1]);
+    }
+    public int[] invers(int[] arr){
+        int[] temp = new int[arr.length];
+        int end = arr.length-1;
+        for(int i=0;i<arr.length;i++){
+            temp[end - i] = arr[i];
+        }
+        return temp;
+    }
+    // daca un nr este de 3 ori, mi-l afiseaza de 3 ori si imi raporteaza 3 dubluri, nu stiu daca e corect pt ca daca este
+    // o singura dublura, adica daca nr se regaseste de 2 ori in array mi-l afiseaza o singura data, si imi raporteaza
+    // o singura dublura. stiu de ce se intampla asta dar nu stiu cum as putea sa fac sa nu se mai intample asta
+    public int[] duplicate(int[]arr){
+        int k = 0;
+        int[] temp = new int[arr.length];
+        for(int i=0;i<arr.length;i++)
+            for(int j = i+1;j<arr.length-1;j++){
+                if(arr[i] == arr[j]){
+                    temp[k] = arr[i];
+                    k++;
+            }
+
+        }
+        return temp;
+    }
 }
 

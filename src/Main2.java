@@ -64,8 +64,8 @@ public class Main2 {
         else
             System.out.println("Numarul " + valoare + " nu se afla in array."); */
         //pct. 9
-        /* int[] array = {10,2,31,14,5,6,7,18,9};
-        System.out.println(op.sort2nd(array));
+        // int[] array = {10,2,31,14,5,6,7,18,9};
+/*        System.out.println(op.sort2nd(array));
         // altfel, folosind doar bucla for
          int[] array = {10,2,31,14,5,6,7,18,9};
         System.out.println(op.sort2ndDoi(array));*/
@@ -74,7 +74,30 @@ public class Main2 {
         int[]array2 = new int[6];
         for(int x:op.copy1To2(array1, array2))
             System.out.print(x + " "); */
-
+        // pct. 8
+        /*int[]array = {1,2,3,4,5,6};
+        int numar = 3;
+        for(int n:op.arrayFaraNumar(array, numar))
+        System.out.print( n + " "); */
+        // ---- tema arrays optionala pct2
+        //int[] array = {10,2,31,14,5,6,7,18,9};
+       // op.primulUltimul(array);
+        //----tema arrays optionala pct 3
+        /*int[]array = {1,2,3,4,5,6};
+        for(int n:op.invers(array))
+            System.out.print(n + " "); */
+        //----- tema arrays optionala pct 4
+        int[]array = {1,2,4,6,4,4,2,5,8};
+        int count = 0;
+        for(int n:op.duplicate(array)) {
+            if(n != 0){
+                System.out.print(n + " ");
+                count++;
+            }
+        }
+        if(count == 0)
+            System.out.println("nici o dublura");
+        System.out.println("nr de dubluri este: " + count);
     }
 
 }
