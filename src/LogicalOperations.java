@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.Collections;
 public class LogicalOperations {
     public int checkBiggerNumber(int first, int second){ //pct. 3
         if(first > second){
@@ -448,6 +449,15 @@ public class LogicalOperations {
             strList.add(index, sir);
             System.out.print(strList);}
         else System.out.println("numarul este mai mare decat marimea listei");
+    }
+    public  void primulInLista(ArrayList<Integer> myList4, int number){
+        myList4.add(0,number);
+        System.out.println();
+        System.out.print(myList4);
+    }
+    public void biggerInList(ArrayList<Integer> myList5){
+        Collections.sort(myList5);
+        System.out.println(myList5.get(myList5.size()-1));
     }
 }
 

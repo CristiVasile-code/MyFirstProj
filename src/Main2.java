@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 public class Main2 {
     public static void main(String[] args) {
 
@@ -112,6 +113,8 @@ public class Main2 {
         System.out.println();
         ArrayList<String> stringList = op.stringPopulate();
         op.stringToPoz(stringList, 3, "bla");
+        op.primulInLista(listOne,3);
+        op.biggerInList(listOne);
     }
 
 
