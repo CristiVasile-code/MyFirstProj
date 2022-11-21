@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 public class Main2 {
     public static void main(String[] args) {
 
@@ -87,7 +88,7 @@ public class Main2 {
         for(int n:op.invers(array))
             System.out.print(n + " "); */
         //----- tema arrays optionala pct 4
-        int[]array = {1,2,4,6,4,4,2,5,8};
+        /*int[]array = {1,2,4,6,4,4,2,5,8};
         int count = 0;
         for(int n:op.duplicate(array)) {
             if(n != 0){
@@ -98,6 +99,20 @@ public class Main2 {
         if(count == 0)
             System.out.println("nici o dublura");
         System.out.println("nr de dubluri este: " + count);
+
+         */
+        ArrayList<Integer> listOne = op.Populate();
+        System.out.print(listOne);
+        System.out.println();
+        op.addToList(listOne,77);
+        System.out.println();
+        op.fromIndex(listOne,3);
+        System.out.println();
+        op.invers(listOne);
+        System.out.println();
+        ArrayList<String> stringList = op.stringPopulate();
+        op.stringToPoz(stringList, 3, "bla");
     }
+
 
 }

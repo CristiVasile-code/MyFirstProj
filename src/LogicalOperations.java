@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.ArrayList;
 public class LogicalOperations {
     public int checkBiggerNumber(int first, int second){ //pct. 3
         if(first > second){
@@ -402,6 +403,51 @@ public class LogicalOperations {
 
         }
         return temp;
+    }
+    public ArrayList<Integer>Populate(){
+        ArrayList<Integer> aList = new ArrayList<Integer>();
+        aList.add(1);
+        aList.add(3);
+        aList.add(4);
+        aList.add(13);
+        aList.add(26);
+        return aList;
+    }
+    public void addToList(ArrayList<Integer> myList, int number){
+        myList.add(number);
+        System.out.print(myList);
+    }
+    public void fromIndex(ArrayList<Integer> myList2, int index){
+        ArrayList<Integer> temp = new ArrayList<Integer>();
+        if(index < myList2.size()){
+            for(int i=index;i<myList2.size();i++){
+                temp.add(myList2.get(i));
+            }
+            System.out.print(temp);
+        }
+        else System.out.println("numarul este mai mare decat lungimea listei !");
+    }
+    public void invers(ArrayList<Integer> myList3){
+        ArrayList<Integer> temp = new ArrayList<Integer>();
+        for(int i = myList3.size()-1;i>=0;i--){
+            temp.add(myList3.get(i));
+        }
+        System.out.print(temp);
+    }
+    public ArrayList<String> stringPopulate(){
+        ArrayList<String> asList = new ArrayList<String>();
+        asList.add("a");
+        asList.add("d");
+        asList.add("4");
+        asList.add("s");
+        asList.add("26");
+        return asList;
+    }
+    public void stringToPoz(ArrayList<String> strList, int index, String sir){
+        if(index<strList.size()){
+            strList.add(index, sir);
+            System.out.print(strList);}
+        else System.out.println("numarul este mai mare decat marimea listei");
     }
 }
 
