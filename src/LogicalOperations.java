@@ -405,15 +405,15 @@ public class LogicalOperations {
         }
         return temp;
     }
-    public ArrayList<Integer>Populate(){
-        ArrayList<Integer> aList = new ArrayList<Integer>();
-        aList.add(1);
-        aList.add(3);
-        aList.add(4);
-        aList.add(13);
-        aList.add(26);
-        return aList;
-    }
+//    public ArrayList<Integer>Populate(){
+//        ArrayList<Integer> aList = new ArrayList<Integer>();
+//        aList.add(1);
+//        aList.add(3);
+//        aList.add(4);
+//        aList.add(13);
+//        aList.add(26);
+//        return aList;
+//    }
     public void addToList(ArrayList<Integer> myList, int number){
         myList.add(number);
         System.out.print(myList);
@@ -458,6 +458,41 @@ public class LogicalOperations {
     public void biggerInList(ArrayList<Integer> myList5){
         Collections.sort(myList5);
         System.out.println(myList5.get(myList5.size()-1));
+    }
+    public void printArray(int[] myArray) {
+        for (int i = 0; i < myArray.length; i++) {
+            System.out.print(myArray[i] + " ");
+        }
+    }
+    public ArrayList<Integer>Populate(){
+        ArrayList<Integer> aList = new ArrayList<Integer>();
+        aList.add(1);
+        aList.add(13);
+        aList.add(4);
+        aList.add(131);
+        aList.add(26);
+        return aList;
+    }
+    public ArrayList<Integer>sortList(ArrayList<Integer> list1){
+                int tempo = 0;
+        for(int i=0;i<list1.size();i++){
+            for(int j=i+1;j<list1.size();j++){
+                if(list1.get(i) > list1.get(j)){
+                    tempo = list1.get(i);
+                    list1.set(i, list1.get(j));
+                    list1.set(j, tempo);
+                }
+            }
+        }
+        return list1;
+    }
+    public ArrayList<Integer> listaPare(ArrayList<Integer> list2){
+        ArrayList<Integer> temp = new ArrayList<>();
+        for(int n:list2){
+            if(n % 2 == 0)
+                temp.add(n);
+        }
+        return temp;
     }
 }
 
